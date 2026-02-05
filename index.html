@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Álbum 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Página inicial -->
+  <div class="inicio" id="inicio">
+    <div class="conteudo-inicio">
+      <p class="texto-inicio" id="textoInicio">
+Oi, meu amor! Eu quis fazer esse cantinho pra lembrar um pouquinho da nossa história, nesses quase dois anos incríveis do seu lado, meu amor 💗
+</p>
+      <button id="botao-album" class="btn-abrir" onclick="abrirAlbum()">
+        <span>Abrir o álbum</span>
+        <svg class="icone-seta" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Álbum -->
+  <div class="container escondido" id="album">
+    <div class="header-album">
+      <div class="contador" id="contador">1 / 4</div>
+    </div>
+    
+    <div class="album">
+      <div class="foto-container">
+        <img id="foto" src="" alt="Nossa foto">
+        <div class="foto-overlay"></div>
+      </div>
+      <p class="data" id="data"></p>
+      <p class="texto" id="texto"></p>
+    </div>
+
+    <p class="dica">desliza pro lado</p>
+  </div>
+
+  <!-- Tela final -->
+  <div class="final escondido" id="final">
+    <div class="conteudo-final">
+      <p class="texto-final" id="textoFinal"></p>
+      <div class="linha-amor">
+        <span class="amor-final">Te amo</span>
+        <span class="icone-coracao-final">💗</span>
+      </div>
+      
+      <!-- Container do vídeo -->
+      <div class="video-container">
+        <video controls>
+          <source src="fotos/video.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos HTML5.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
