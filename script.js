@@ -8,7 +8,7 @@ const album = [
   },
   {
     foto: "fotos/foto2.jpg",
-    data: "13/08/2025",
+    data: "13/08/2024",
     texto: "Essa é um pouco depois da outra foto. Eu ainda continuava sem acreditar que eu tinha você comigo, amor. Nesse dia, eu fui te buscar depois do seu curso pra gente poder ficar juntos antes da aula. Eram as horas mais felizes do meu dia inteiro, só por poder ficar com você, meu amor. Acho que você nunca vai ter noção do quão feliz você me faz, amor."
   },
   {
@@ -186,7 +186,7 @@ function escrever() {
     elementos.textoInicio.innerHTML += textoCompleto[indexDigitacao];
     elementos.textoInicio.appendChild(cursor);
     indexDigitacao++;
-    setTimeout(escrever, 50);
+    setTimeout(escrever, 65);
   } else {
     // Remove cursor e mostra botão
     setTimeout(() => {
@@ -240,4 +240,5 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', inicializar);
 } else {
   inicializar();
+
 }
